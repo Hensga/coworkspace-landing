@@ -1,0 +1,14 @@
+{
+  "name": "cwb14-redesign",
+  "version": "1.0.0",
+  "description": "Redesign of the CoWorking Space CWB14",
+  "main": "app.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "author": "Henning Huth",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
