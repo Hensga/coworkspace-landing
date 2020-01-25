@@ -1,0 +1,19 @@
+.navbar-logo {
+  font-family: $Oswald;
+  font-size: $heading;
+  position: absolute;
+  z-index: 99;
+
+  a {
+    text-decoration: none;
+    color: $White;
+  }
+
+  .logo-number {
+    color: $Nude;
+  }
+
+  .logo-dot {
+    color: $Red;
+  }
+}
