@@ -19,4 +19,16 @@
     min-height: 600px;
     height: calc(100vh);
   }
+  .my-title {
+    color: $White;
+    font-family: $Oswald;
+    font-size: $big-heading !important;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .title-paragraph {
+    color: $White;
+    font-size: $paragraph;
+  }
 }

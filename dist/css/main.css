@@ -676,6 +676,15 @@ Colors
   .landingpage-block-cover .row {
     min-height: 600px;
     height: calc(100vh); }
+  .landingpage-block-cover .my-title {
+    color: #ffffff;
+    font-family: "Oswald", sans-serif;
+    font-size: 4rem !important;
+    font-weight: 700;
+    text-transform: uppercase; }
+  .landingpage-block-cover .title-paragraph {
+    color: #ffffff;
+    font-size: 1.125rem; }
 
 /*****************************************
 Reset
