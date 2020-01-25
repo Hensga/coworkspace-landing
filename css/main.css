@@ -686,6 +686,19 @@ Colors
     color: #ffffff;
     font-size: 1.125rem; }
 
+.navbar-logo {
+  font-family: "Oswald", sans-serif;
+  font-size: 2rem;
+  position: absolute;
+  z-index: 99; }
+  .navbar-logo a {
+    text-decoration: none;
+    color: #ffffff; }
+  .navbar-logo .logo-number {
+    color: #edd7c2; }
+  .navbar-logo .logo-dot {
+    color: #b93131; }
+
 /*****************************************
 Reset
 ******************************************/
