@@ -1,0 +1,35 @@
+/******************************
+First Featured Box
+******************************/
+.feature-box-half {
+  position: relative;
+  background: $White;
+  margin-top: -100px;
+  box-shadow: 0 0 20px -5px rgba(0, 0, 0, 0.1);
+  div {
+    width: 50%;
+  }
+  .image {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .text {
+    padding: 100px;
+    font-family: $Karla;
+    font-size: 1rem;
+
+    .feature-title {
+      font-family: $Oswald;
+      font-size: $heading;
+    }
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      li {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

@@ -5,6 +5,7 @@ Imports
 @import 'functions';
 @import 'landingpage-block';
 @import 'navbar';
+@import 'side-blocks';
 /*****************************************
 Reset
 ******************************************/
@@ -12,4 +13,14 @@ Reset
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+// Changing Bootstraps default Buttons
+.btn-primary {
+  color: $White;
+  background: $Nude;
+  border-style: none;
+  &:hover {
+    background-color: darken($Nude, $amount: 6%);
+  }
 }
