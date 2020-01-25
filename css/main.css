@@ -714,6 +714,34 @@ Colors
 /*****************************************
 Mobile Burgermenu
 ******************************************/
+/******************************
+First Featured Box
+******************************/
+.feature-box-half {
+  position: relative;
+  background: #ffffff;
+  margin-top: -100px;
+  box-shadow: 0 0 20px -5px rgba(0, 0, 0, 0.1); }
+  .feature-box-half div {
+    width: 50%; }
+  .feature-box-half .image {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat; }
+  .feature-box-half .text {
+    padding: 100px;
+    font-family: "Karla", sans-serif;
+    font-size: 1rem; }
+    .feature-box-half .text .feature-title {
+      font-family: "Oswald", sans-serif;
+      font-size: 2rem; }
+    .feature-box-half .text ul {
+      padding: 0;
+      margin: 0;
+      list-style: none; }
+      .feature-box-half .text ul li {
+        margin-bottom: 10px; }
+
 /*****************************************
 Reset
 ******************************************/
@@ -721,3 +749,10 @@ Reset
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
+
+.btn-primary {
+  color: #ffffff;
+  background: #edd7c2;
+  border-style: none; }
+  .btn-primary:hover {
+    background-color: #e6c8aa; }
