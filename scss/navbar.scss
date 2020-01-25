@@ -8,6 +8,7 @@
     font-size: $heading;
     font-family: $Oswald;
     color: $White;
+    text-decoration: none;
   }
 
   .logo-number {
@@ -23,4 +24,8 @@
   font-family: $Karla;
   font-size: $navbar;
   color: $White;
+
+  &:hover {
+    color: $Nude;
+  }
 }
