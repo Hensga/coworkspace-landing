@@ -680,24 +680,33 @@ Colors
     color: #ffffff;
     font-family: "Oswald", sans-serif;
     font-size: 4rem !important;
-    font-weight: 700;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    line-height: 1.2;
     text-transform: uppercase; }
   .landingpage-block-cover .title-paragraph {
     color: #ffffff;
     font-size: 1.125rem; }
 
-.navbar-logo {
-  font-family: "Oswald", sans-serif;
-  font-size: 2rem;
+.my-navbar {
   position: absolute;
-  z-index: 99; }
-  .navbar-logo a {
-    text-decoration: none;
+  z-index: 99;
+  width: 100%;
+  margin-bottom: 0; }
+  .my-navbar .navbar-logo a {
+    font-size: 2rem;
+    font-family: "Oswald", sans-serif;
     color: #ffffff; }
-  .navbar-logo .logo-number {
+  .my-navbar .logo-number {
     color: #edd7c2; }
-  .navbar-logo .logo-dot {
+  .my-navbar .logo-dot {
     color: #b93131; }
+
+.site-menu a {
+  text-decoration: none;
+  font-family: "Karla", sans-serif;
+  font-size: 1rem;
+  color: #ffffff; }
 
 /*****************************************
 Reset
