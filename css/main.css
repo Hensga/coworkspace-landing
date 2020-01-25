@@ -696,7 +696,8 @@ Colors
   .my-navbar .navbar-logo a {
     font-size: 2rem;
     font-family: "Oswald", sans-serif;
-    color: #ffffff; }
+    color: #ffffff;
+    text-decoration: none; }
   .my-navbar .logo-number {
     color: #edd7c2; }
   .my-navbar .logo-dot {
@@ -707,6 +708,8 @@ Colors
   font-family: "Karla", sans-serif;
   font-size: 1rem;
   color: #ffffff; }
+  .site-menu a:hover {
+    color: #edd7c2; }
 
 /*****************************************
 Reset
