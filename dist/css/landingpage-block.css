@@ -13,6 +13,6 @@
       top: 0;
       background: rgba(0, 0, 0, 0.3); }
   .landingpage-block-cover,
-  .landingpage-block-cover row {
+  .landingpage-block-cover .row {
     min-height: 600px;
     height: calc(100vh); }
