@@ -688,6 +688,9 @@ Colors
     color: #ffffff;
     font-size: 1.125rem; }
 
+.bg-image.fixed {
+  background-position: fixed !important; }
+
 .my-navbar {
   position: absolute;
   z-index: 99;
@@ -741,6 +744,89 @@ First Featured Box
       list-style: none; }
       .feature-box-half .text ul li {
         margin-bottom: 10px; }
+
+/******************************
+Divider 1
+******************************/
+.site-section-heading h2 {
+  font-size: 2rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase; }
+
+.site-section-heading.w-border h2 {
+  position: relative;
+  padding-bottom: 20px;
+  display: inline-block; }
+  .site-section-heading.w-border h2:after {
+    position: absolute;
+    content: '';
+    width: 90px;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    background: #edd7c2; }
+
+.site-section-heading.w-border.text-center h2:after {
+  left: 50%;
+  transform: translateX(-50%); }
+
+/******************************
+Angebote
+******************************/
+.padded-multi-line-primary, .unit-9 h2 {
+  display: inline;
+  background: #edd7c2; }
+
+.padded-multi-line-black, .unit-9 span {
+  display: inline;
+  background: #191414; }
+
+.unit-9 {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 300px;
+  position: relative;
+  display: block;
+  overflow: hidden; }
+  .unit-9 .image {
+    background-size: cover;
+    background-position: center center;
+    transition: 0.3s all ease-in-out;
+    height: 300px;
+    transition: 0.3s all ease;
+    transform: scale(1.05); }
+  .unit-9 .unit-9-content {
+    transition: 0.3s all ease-in-out;
+    position: absolute;
+    bottom: 0; }
+  .unit-9 h2 {
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    color: #ffffff;
+    font-size: 1.125rem;
+    margin-bottom: 0; }
+  .unit-9 span {
+    background: #191414;
+    display: block;
+    color: #ffffff;
+    padding-left: 10px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase; }
+  .unit-9:hover .image {
+    transform: scale(1); }
+
+/******************************
+Media Queries
+******************************/
+@media (min-width: 576px) {
+  .site-section {
+    padding-top: 7em; } }
 
 /*****************************************
 Reset

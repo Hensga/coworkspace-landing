@@ -33,3 +33,110 @@ First Featured Box
     }
   }
 }
+
+/******************************
+Divider 1
+******************************/
+.site-section-heading {
+  h2 {
+    font-size: $heading;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+  }
+  &.w-border {
+    h2 {
+      position: relative;
+      padding-bottom: 20px;
+      display: inline-block;
+      &:after {
+        position: absolute;
+        content: '';
+        width: 90px;
+        left: 0;
+        bottom: 0;
+        height: 4px;
+        background: $Nude;
+      }
+    }
+    &.text-center {
+      h2 {
+        &:after {
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+  }
+}
+
+/******************************
+Angebote
+******************************/
+.padded-multi-line-primary {
+  display: inline;
+  background: $Nude;
+}
+.padded-multi-line-black {
+  display: inline;
+  background: $Black;
+}
+
+.unit-9 {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 300px;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  .image {
+    background-size: cover;
+    background-position: center center;
+    transition: 0.3s all ease-in-out;
+    height: 300px;
+    transition: 0.3s all ease;
+    transform: scale(1.05);
+  }
+
+  .unit-9-content {
+    transition: 0.3s all ease-in-out;
+    position: absolute;
+    bottom: 0;
+  }
+  h2 {
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    color: $White;
+    font-size: $paragraph;
+    margin-bottom: 0;
+    @extend .padded-multi-line-primary;
+  }
+  span {
+    background: $Black;
+    display: block;
+    color: $White;
+    padding-left: 10px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    @extend .padded-multi-line-black;
+  }
+  &:hover {
+    .image {
+      transform: scale(1);
+    }
+  }
+}
+
+/******************************
+Media Queries
+******************************/
+@media (min-width: 576px) {
+  .site-section {
+    padding-top: 7em;
+  }
+}
