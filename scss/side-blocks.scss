@@ -40,8 +40,12 @@ Divider 1
 .site-section-heading {
   h2 {
     font-size: $heading;
+    font-family: $Oswald;
     letter-spacing: 0.2em;
     text-transform: uppercase;
+  }
+  p {
+    font-family: $Karla;
   }
   &.w-border {
     h2 {
@@ -131,6 +135,10 @@ Angebote
     }
   }
 }
+
+/******************************
+Weitere Angebote
+******************************/
 
 /******************************
 Media Queries
