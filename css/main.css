@@ -746,6 +746,60 @@ First Featured Box
         margin-bottom: 10px; }
 
 /******************************
+Image
+******************************/
+.site-block-half .image,
+.site-block-half .text {
+  width: 100%; }
+  @media (min-width: 992px) {
+    .site-block-half .image,
+    .site-block-half .text {
+      width: 50%; } }
+
+@media (max-width: 991.98px) {
+  .site-block-half .image {
+    margin-bottom: 50px; } }
+
+.site-block-half .text {
+  padding-left: 15px;
+  padding-right: 15px; }
+  @media (min-width: 992px) {
+    .site-block-half .text {
+      padding: 4rem; } }
+  @media (min-width: 1200px) {
+    .site-block-half .text {
+      padding: 8rem 4rem; } }
+
+.site-block-half .bg-image {
+  background-position: center center; }
+  @media (max-width: 991.98px) {
+    .site-block-half .bg-image {
+      height: 400px; } }
+
+.site-block-half.site-block-video .image {
+  position: relative; }
+  .site-block-half.site-block-video .image .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    width: 70px;
+    height: 70px;
+    background: #fff;
+    display: block;
+    border-radius: 50%;
+    opacity: 1;
+    color: #e3c4a8 !important; }
+    .site-block-half.site-block-video .image .play-button:hover {
+      opacity: 1; }
+    .site-block-half.site-block-video .image .play-button > span {
+      position: absolute;
+      left: 55%;
+      top: 50%;
+      transform: translate(-60%, -50%); }
+
+/******************************
 Divider 1
 ******************************/
 .site-section-heading h2 {
@@ -800,6 +854,15 @@ Angebote
     height: 300px;
     transition: 0.3s all ease;
     transform: scale(1.05); }
+  .unit-9.no-height {
+    height: auto; }
+    .unit-9.no-height .image {
+      height: auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0; }
   .unit-9 .unit-9-content {
     transition: 0.3s all ease-in-out;
     position: absolute;
@@ -828,6 +891,31 @@ Angebote
 /******************************
 Weitere Angebote
 ******************************/
+.backgroundimg, .site-block-retro .col1, .site-block-retro .col2 > a {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative; }
+
+.site-block-retro .col1,
+.site-block-retro .col2 {
+  width: 48%; }
+  @media (max-width: 767.98px) {
+    .site-block-retro .col1,
+    .site-block-retro .col2 {
+      width: 100%; } }
+
+@media (max-width: 767.98px) {
+  .site-block-retro .col1 {
+    height: 300px;
+    margin-bottom: 8%; } }
+
+.site-block-retro .col2 > a {
+  display: block;
+  height: 300px; }
+  .site-block-retro .col2 > a:first-child {
+    margin-bottom: 8%; }
+
 /******************************
 Media Queries
 ******************************/
