@@ -18,12 +18,21 @@ Reset
   box-sizing: border-box;
 }
 
-// Changing Bootstraps default Buttons
+// Changing Bootstraps default Buttons & "a" tags
 .btn-primary {
   color: $White;
   background: $Nude;
   border-style: none;
   &:hover {
     background-color: darken($Nude, $amount: 6%);
+  }
+}
+
+a {
+  color: $Nude;
+  text-decoration: none;
+  &:hover {
+    color: darken($Nude, $amount: 6%);
+    text-decoration: none;
   }
 }

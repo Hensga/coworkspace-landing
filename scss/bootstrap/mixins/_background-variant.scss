@@ -4,7 +4,7 @@
 
 @mixin bg-variant($parent, $color) {
   #{$parent} {
-    background-color: $color !important;
+    background-color: $Nude !important;
   }
   a#{$parent},
   button#{$parent} {
@@ -16,6 +16,7 @@
 
 @mixin bg-gradient-variant($parent, $color) {
   #{$parent} {
-    background: $color linear-gradient(180deg, mix($body-bg, $color, 15%), $color) repeat-x !important;
+    background: $color
+      linear-gradient(180deg, mix($body-bg, $color, 15%), $color) repeat-x !important;
   }
 }

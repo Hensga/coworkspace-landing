@@ -717,6 +717,14 @@ Colors
 /*****************************************
 Mobile Burgermenu
 ******************************************/
+.site-section {
+  padding: 3em 0; }
+  @media (min-width: 768px) {
+    .site-section {
+      padding: 7em 0; } }
+  .site-section.site-section-sm {
+    padding: 4em 0; }
+
 /******************************
 First Featured Box
 ******************************/
@@ -916,6 +924,106 @@ Weitere Angebote
   .site-block-retro .col2 > a:first-child {
     margin-bottom: 8%; }
 
+.block-13,
+.slide-one-item {
+  position: relative;
+  z-index: 1; }
+  .block-13 .owl-nav,
+  .slide-one-item .owl-nav {
+    position: relative;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%); }
+    .block-13 .owl-nav .owl-prev,
+    .block-13 .owl-nav .owl-next,
+    .slide-one-item .owl-nav .owl-prev,
+    .slide-one-item .owl-nav .owl-next {
+      position: relative;
+      display: inline-block;
+      padding: 20px;
+      font-size: 30px;
+      color: #fff; }
+      .block-13 .owl-nav .owl-prev.disabled,
+      .block-13 .owl-nav .owl-next.disabled,
+      .slide-one-item .owl-nav .owl-prev.disabled,
+      .slide-one-item .owl-nav .owl-next.disabled {
+        opacity: 0.2; }
+
+/******************************
+Customers
+******************************/
+.font-weight-light {
+  font-family: "Oswald", sans-serif !important; }
+
+.font-italic {
+  font-family: "Karla", sans-serif !important; }
+
+/******************************
+Social Area
+******************************/
+.bg-primary {
+  background-color: #edd7c2 !important; }
+
+.social-icon span {
+  font-size: 20px; }
+
+.social-icon:hover {
+  color: #eec60a !important;
+  background: #ddb795; }
+
+/******************************
+Footer Content
+******************************/
+.site-footer {
+  padding: 4em 0; }
+  @media (min-width: 768px) {
+    .site-footer {
+      padding: 7em 0; } }
+  .site-footer p {
+    color: #737373;
+    font-family: "Karla", sans-serif; }
+  .site-footer h2,
+  .site-footer h3,
+  .site-footer h4,
+  .site-footer h5 {
+    color: #fff;
+    font-family: "Oswald", sans-serif !important; }
+  .site-footer a {
+    color: #999999;
+    font-family: "Karla", sans-serif; }
+    .site-footer a:hover {
+      color: white; }
+  .site-footer ul li {
+    margin-bottom: 10px; }
+  .site-footer .footer-heading {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #000;
+    position: relative;
+    padding-bottom: 15px; }
+    .site-footer .footer-heading:before {
+      content: '';
+      background: #e3c4a8;
+      width: 40px;
+      height: 2px;
+      position: absolute;
+      bottom: 0; }
+
+.site-block-subscribe .btn {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: "Karla", sans-serif; }
+
+.site-block-subscribe .form-control {
+  font-weight: 300;
+  height: 60px;
+  color: #000;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: "Karla", sans-serif; }
+
 /******************************
 Media Queries
 ******************************/
@@ -937,3 +1045,10 @@ Reset
   border-style: none; }
   .btn-primary:hover {
     background-color: #e6c8aa; }
+
+a {
+  color: #edd7c2;
+  text-decoration: none; }
+  a:hover {
+    color: #e6c8aa;
+    text-decoration: none; }
