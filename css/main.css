@@ -750,8 +750,12 @@ Divider 1
 ******************************/
 .site-section-heading h2 {
   font-size: 2rem;
+  font-family: "Oswald", sans-serif;
   letter-spacing: 0.2em;
   text-transform: uppercase; }
+
+.site-section-heading p {
+  font-family: "Karla", sans-serif; }
 
 .site-section-heading.w-border h2 {
   position: relative;
@@ -821,6 +825,9 @@ Angebote
   .unit-9:hover .image {
     transform: scale(1); }
 
+/******************************
+Weitere Angebote
+******************************/
 /******************************
 Media Queries
 ******************************/
