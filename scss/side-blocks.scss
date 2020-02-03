@@ -35,6 +35,68 @@ First Featured Box
 }
 
 /******************************
+Image
+******************************/
+.site-block-half {
+  .image,
+  .text {
+    width: 100%;
+    @include media-breakpoint-up(lg) {
+      width: 50%;
+    }
+  }
+  .image {
+    @include media-breakpoint-down(md) {
+      margin-bottom: 50px;
+    }
+  }
+  .text {
+    padding-left: 15px;
+    padding-right: 15px;
+    @include media-breakpoint-up(lg) {
+      padding: 4rem;
+    }
+    @include media-breakpoint-up(xl) {
+      padding: 8rem 4rem;
+    }
+  }
+  .bg-image {
+    background-position: center center;
+    @include media-breakpoint-down(md) {
+      height: 400px;
+    }
+  }
+
+  &.site-block-video {
+    .image {
+      position: relative;
+      .play-button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 20px;
+        width: 70px;
+        height: 70px;
+        background: $white;
+        display: block;
+        border-radius: 50%;
+        opacity: 1;
+        color: $primary !important;
+        &:hover {
+          opacity: 1;
+        }
+        > span {
+          position: absolute;
+          left: 55%;
+          top: 50%;
+          transform: translate(-60%, -50%);
+        }
+      }
+    }
+  }
+}
+/******************************
 Divider 1
 ******************************/
 .site-section-heading {
@@ -101,7 +163,17 @@ Angebote
     transition: 0.3s all ease;
     transform: scale(1.05);
   }
-
+  &.no-height {
+    height: auto;
+    .image {
+      height: auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  }
   .unit-9-content {
     transition: 0.3s all ease-in-out;
     position: absolute;
@@ -139,7 +211,38 @@ Angebote
 /******************************
 Weitere Angebote
 ******************************/
-
+.backgroundimg {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.site-block-retro {
+  .col1,
+  .col2 {
+    width: 48%;
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
+  }
+  .col1 {
+    @extend .backgroundimg;
+    @include media-breakpoint-down(sm) {
+      height: 300px;
+      margin-bottom: 8%;
+    }
+  }
+  .col2 {
+    > a {
+      display: block;
+      @extend .backgroundimg;
+      height: 300px;
+      &:first-child {
+        margin-bottom: 8%;
+      }
+    }
+  }
+}
 /******************************
 Media Queries
 ******************************/
